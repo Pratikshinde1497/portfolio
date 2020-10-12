@@ -1,0 +1,9 @@
+.container-fluid {
+  
+  
+  .card{
+    &:hover {
+      box-shadow: .0em .5em 10px 4px rgba(128, 128, 128, 0.527);
+    }
+  }
+}

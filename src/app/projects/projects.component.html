@@ -1,9 +1,33 @@
-<h1>Projects List!</h1>
+<div class="container-fluid">
 
-<ul *ngFor="let project of projects" class="conntainer">
-  <li>
-    <h2>{{ project.name }}</h2>
-    <br />
-    <span>{{ project.description }}</span>
-  </li>
-</ul>
+  <h3 class="text-center my-5 bold color-primary">List of Projects</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-4 " *ngFor="let project of projects">
+        <div class="card">
+          <div class="card-block">
+            <!-- header -->
+            <!-- <div class="card-header"> -->
+            <img src="{{ project.img }}" alt="alternat name" class="card-img card-img-top img-rounded">
+            <!-- title -->
+            <h4 class="card-title text-center my-2 color-primary">{{project.name | uppercase}}</h4>
+            <!-- </div> -->
+            <!-- body -->
+            <div class="card-body d-flex flex-column">
+              <!-- description -->
+              <p class="card-text">{{project.description}}</p>
+              <!-- learn more btn -->
+              <div class="mt-auto text-center">
+                <a href="" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+            <!-- card-footer -->
+            <!-- <div class="card-footer">
+                <p>this is footer</p>
+              </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>

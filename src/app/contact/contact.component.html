@@ -1,7 +1,18 @@
-<p>contact works!</p>
-<div class="form-group">
-  <label>nam</label>
-  <input [(ngModel)]="name" type="text" class="form-inline" />
-</div>
+<div class="container-fluid">
+  <h3 class="bold text-center my-5 color-primary">Contact Me</h3>
 
-{{ name }}
+  <div class="container col-md-6 offset-md-3">
+    <form method="POST">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" [(ngModel)]="name" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" [(ngModel)]="email" type="email" class="form-control" />
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div>
+</div>

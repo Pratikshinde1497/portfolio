@@ -14,22 +14,25 @@ export class ProjectService {
         description:
           'java based project, having college assignments in mind, teacher or students can upload and download assignments with speed of Light..!',
         technologies: ['java advanced', 'mysql', 'tomcat server'],
+        img: './assets/images/assignments.jpg',
         period: '5 months',
       },
-      {
-        id: 2,
-        name: 'ChatBot',
-        description:
-          'java based project, having college admissions and day to day lifestyle of students in mind, teacher or students can  ask amy question related to syllabus, admissions, hollidays within period or lectures for today with speed of Sound..!',
-        technologies: ['java advanced', 'mysql', 'tomcat server'],
-        period: '5 months',
-      },
+      // {
+      //   id: 2,
+      //   name: 'ChatBot',
+      //   description:
+      //     'java based project, having college admissions and day to day lifestyle of students in mind, teacher or students can  ask amy question related to syllabus, admissions, hollidays within period or lectures for today with speed of Sound..!',
+      //   technologies: ['java advanced', 'mysql', 'tomcat server'],
+      //   img: './assets/images/chatbot.png',
+      //   period: '5 months',
+      // },
       {
         id: 3,
         name: 'Third Eye',
         description:
           'python based project, having traffic on roads and how people are unserious about helmets in mind, everyone can upload photo or video about the crime being happen. crime means trippsy || without helmet riding the system detects this kinds and automatically reads nuber plate of vehicle whos commiting crime, also finds who the owner of this vehicle. by all means try to make a desciplined generation of bike riders',
         technologies: ['python', 'django', 'flask', 'postgresql'],
+        img: './assets/images/cameras.jpg',
         period: '5.5 months',
       },
       {
@@ -43,6 +46,7 @@ export class ProjectService {
           'elixir',
           'vanila javascript',
         ],
+        img: './assets/images/healthcare.jpg',
         period: '6 months',
       },
     ];
