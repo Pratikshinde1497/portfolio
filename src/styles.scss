@@ -11,12 +11,16 @@
 
 body {
   color: rgba(43, 41, 41, 0.986);
-}
 
-.bold {
-  font-weight: bold;
-}
+  .bold {
+    font-weight: bold;
+  }
 
-.color-primary {
-color: rgb(27, 45, 59);
-} 
+  .color-primary {
+  color: rgb(27, 45, 59);
+  }
+
+  .nav-link {
+    color: rgb(27, 45, 59);
+  }
+}
