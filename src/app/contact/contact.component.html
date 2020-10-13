@@ -1,18 +1,35 @@
 <div class="container-fluid">
+  <!-- f: {{f.value| json}}
+              user: {{user | json}} -->
+
   <h3 class="bold text-center my-5 color-primary">Contact Me</h3>
 
-  <div class="container col-md-6 offset-md-3">
-    <form method="POST">
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input id="name" [(ngModel)]="name" type="text" class="form-control" />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input id="email" [(ngModel)]="email" type="email" class="form-control" />
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        </div>
+  <div class="container col-md-6 offset-md-3 mb-5">
+    <form #f="ngForm" (ngSubmit)="onSubmit()">
+      <!--  name  -->
+      <div class="form-group">
+        <label for="fname" class="color-primary">Name</label>
+        <input id="fname" required name="name" type="text" class="form-control" [(ngModel)]="user.name" #name="ngModel" />
+      </div>
+      <!-- <p>touched: {{name.touched}}</p>
+          <p>dirty: {{name.dirty}}</p>
+          <p>valid: {{name.valid}}</p> -->
+      <!-- email -->
+      <div class="form-group">
+        <label for="emailid" class="color-primary">Email</label>
+        <input id="emailid" required name="email" type="email" class="form-control" [(ngModel)]="user.email" #email="ngModel" />
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <!-- <p>touched: {{email.touched}}</p>
+          <p>dirty: {{email.dirty}}</p>
+          <p>valid: {{email.valid}}</p> -->
+      <!-- textarea -->
+      <div class="form-group">
+        <label for="msg" class="color-primary">Say Hi,</label>
+        <textarea name="msg" id="msg" cols="30" rows="5" class="form-control" [(ngModel)]="user.msg"
+          #msg="ngModel"></textarea></div>
+      <!-- submit -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
 </div>

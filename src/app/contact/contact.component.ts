@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -7,11 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
   constructor() {}
-  
-  public name = '';
-  public email = '';
-  public msg = '';
-  
+
+  @ViewChild('f') form: any
   ngOnInit(): void {}
   
+  user: User= new User();
+
+  onSubmit() {
+    // console.log("form submitted: ", this.user);
+    this.form.reset()
+  }
+}
+
+
+class User {
+  constructor(public name: String = "", public email: String = "", public msg: String = "") {}
 }
