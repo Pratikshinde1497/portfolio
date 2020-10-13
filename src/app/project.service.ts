@@ -12,7 +12,7 @@ export class ProjectService {
         id: 1,
         name: 'Online Assignment Submission System',
         description:
-          'java based project, having college assignments in mind, teacher or students can upload and download assignments with speed of Light..!',
+          'Java based project, having college assignments in mind, teacher or students can upload and download assignments with speed of Light..!',
         technologies: ['java advanced', 'mysql', 'tomcat server'],
         img: './assets/images/assignments.jpg',
         period: '5 months',
@@ -30,7 +30,7 @@ export class ProjectService {
         id: 3,
         name: 'Third Eye',
         description:
-          'python based project, having traffic on roads and how people are unserious about helmets in mind, everyone can upload photo or video about the crime being happen. crime means trippsy || without helmet riding the system detects this kinds and automatically reads nuber plate of vehicle whos commiting crime, also finds who the owner of this vehicle. by all means try to make a desciplined generation of bike riders',
+          'Python based project, having traffic on roads and peoples life in mind, people can upload photo or video. crime means trippsy || without helmet riding the system detects and reads nuber plate of vehicle whos commiting crime, finds who the owner of vehicle.',
         technologies: ['python', 'django', 'flask', 'postgresql'],
         img: './assets/images/cameras.jpg',
         period: '5.5 months',
@@ -39,7 +39,7 @@ export class ProjectService {
         id: 4,
         name: 'Online Heathcare System',
         description:
-          'erlang based project, having patients heath in mind, any user who is taking medications in hospital which has implemented this system can communicate and share health data to their treating doctors  and make better use of system. doctors or nurses can take watch or treat on critical patients remotely.',
+          'Erlang based project, having patients heath in mind, any user who is taking medications in hospital which has implemented this system can communicate and share health data to their treating doctors  and make better use of system. doctors or nurses can take watch or treat on critical patients remotely.',
         technologies: [
           'erlang OTP',
           'postgresql',

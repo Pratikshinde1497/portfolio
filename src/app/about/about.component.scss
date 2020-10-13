@@ -1,0 +1,23 @@
+
+div {
+  .container-fluid {
+    height: 90vh;
+    width: 100%;
+  }
+  .containe {
+    background-image: url("../../assets/images/me-landscape.jpeg");
+    z-index: 99;
+    width: 100%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    .col-md-6 {
+      background: inherit;
+      height: 70vh;
+    }
+}
+}
+
+
