@@ -9,27 +9,41 @@
       <!--  name  -->
       <div class="form-group">
         <label for="fname" class="color-primary">Name</label>
-        <input id="fname" required name="name" type="text" class="form-control" [(ngModel)]="user.name" #name="ngModel" />
+        <input id="fname" required name="name" type="text" class="form-control" [(ngModel)]="user.name" #name="ngModel"
+          [ngClass]="{'danger': name.invalid && (name.touched || name.dirty)}" />
       </div>
       <!-- <p>touched: {{name.touched}}</p>
           <p>dirty: {{name.dirty}}</p>
           <p>valid: {{name.valid}}</p> -->
       <!-- email -->
+      <!-- {{email.errors | json}} -->
       <div class="form-group">
         <label for="emailid" class="color-primary">Email</label>
-        <input id="emailid" required name="email" type="email" class="form-control" [(ngModel)]="user.email" #email="ngModel" />
+        <input id="emailid" required name="email" type="email" class="form-control" [(ngModel)]="user.email" #email="ngModel"
+          [ngClass]="{'danger': email.invalid && (email.touched || email.dirty)}" />
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
       <!-- <p>touched: {{email.touched}}</p>
           <p>dirty: {{email.dirty}}</p>
           <p>valid: {{email.valid}}</p> -->
+      <div class="form-group">
+        <label>How You Got To Know About Me ?</label>
+        <select class="form-control" required name="contactWay" [(ngModel)]="user.contactWay">
+          <option selected value="">Select a contact way</option>
+          <option *ngFor="let way of ways" [value]="way"> {{way}}
+          </option>
+        </select>
+      </div>
       <!-- textarea -->
       <div class="form-group">
         <label for="msg" class="color-primary">Say Hi,</label>
         <textarea name="msg" id="msg" cols="30" rows="5" class="form-control" [(ngModel)]="user.msg"
-          #msg="ngModel"></textarea></div>
+          #msg="ngModel" ></textarea>
+      </div>
       <!-- submit -->
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <div class=" text-center">
+        <button type="submit" [disabled]="f.invalid" class="btn btn-primary">SEND</button>
+      </div>
     </form>
   </div>
 </div>

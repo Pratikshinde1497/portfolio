@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { User } from '../User.Model';
 
 @Component({
   selector: 'app-contact',
@@ -11,15 +12,13 @@ export class ContactComponent implements OnInit {
   @ViewChild('f') form: any
   ngOnInit(): void {}
   
-  user: User= new User();
-
+  user: User = new User();
+  
+  danger: Boolean = false;
+  sucess: Boolean = false;
+  ways = ['Friends', 'Media', 'News', 'TV', 'Blogs'];
   onSubmit() {
     // console.log("form submitted: ", this.user);
     this.form.reset()
   }
-}
-
-
-class User {
-  constructor(public name: String = "", public email: String = "", public msg: String = "") {}
 }
