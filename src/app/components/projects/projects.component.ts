@@ -1,7 +1,7 @@
+import { ProjectService } from './../../services/project.service';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { AngularFirestore, } from 'angularfire2/firestore';
 import { Observable } from 'rxjs';
-import { ProjectService } from '../project.service';
 
 @Component({
   selector: 'app-projects',

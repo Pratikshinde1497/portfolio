@@ -1,5 +1,5 @@
+import { User } from './../../model/User.Model';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { User } from '../User.Model';
 
 @Component({
   selector: 'app-contact',
