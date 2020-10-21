@@ -1,21 +1,20 @@
-<div class="nav--wrapper">
-  <nav class="navbar nav-tabs navbar-inverse">
-    <ul class="navbar nav">
+<nav class="navbar nav-tabs sticky--nav">
+
+  <ul class="nav flex-column">
       <li class="nav-item">
-        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" data-toggle="tab"
-          class="nav-link">Home</a>
+        <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/projects">Projects</a>
       </li>
       <li class="nav-item">
-        <a routerLink="/projects" routerLinkActive="active" data-toggle="tab" class="nav-link">Projects</a>
+        <a class="nav-link" routerLinkActive="active" routerLink="/skills">Skills</a>
       </li>
       <li class="nav-item">
-        <a routerLink="/contact" routerLinkActive="active" data-toggle="tab" class="nav-link">Contact</a>
+        <a class="nav-link" routerLinkActive="active" routerLink="/contact">Contact</a>
       </li>
       <li class="nav-item">
-        <a routerLink="/about" routerLinkActive="active" data-toggle="tab" class="nav-link">About Me</a>
+        <a class="nav-link" routerLinkActive="active" routerLink="/about">About Me</a>
       </li>
     </ul>
-    <a class="btn btn-primary" routerLinkActive="active" type="button">Search</a>
   </nav>
-  </div>
-  <router-outlet></router-outlet>
