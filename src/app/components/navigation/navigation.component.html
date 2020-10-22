@@ -1,16 +1,18 @@
-<nav class="navbar nav-tabs sticky--nav">
+<div class="sticky--nav">
+
 
   <div class="profile-container">
     <div class="img-container">
-      <img src="./assets/images/me.jpg" alt="profile img">
+      <img src={{imgUrl}} alt="profile img">
     </div>
     <div class="name-container">
-      <span class="name">PRATIK SHINDE</span>
-      <span class="designation">WEB DEVELOPER</span>
-      <span class="location">PUNE MH INDIA</span>
+      <span class="name">{{name}}</span>
+      <span class="designation">{{designation}}</span>
+      <span class="location">{{location}}</span>
     </div>
   </div>
   <h4>MENU</h4>
+  <nav class="navbar nav-tabs">
   <ul class="nav flex-column">
       <li class="nav-item">
         <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="/">HOME</a>
@@ -28,8 +30,10 @@
         <a class="nav-link" routerLinkActive="active" routerLink="/about">ABOUT ME</a>
       </li>
     </ul>
+  </nav>
     <div class="copy-right-container">
       <span>All copy rights are reserved 2020.</span>
-      <span>Made With Love In IN</span>
+      <span>Made With &#10084;&#65039; In 🇮🇳</span>
     </div>
-</nav>
+
+</div>

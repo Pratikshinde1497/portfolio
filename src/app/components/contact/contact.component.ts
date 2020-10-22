@@ -11,7 +11,8 @@ export class ContactComponent implements OnInit {
 
   @ViewChild('f') form: any
   ngOnInit(): void {}
-  
+  bigHead: string = 'contact';
+  smallHead: string = 'get in touch';
   user: User = new User();
   
   danger: Boolean = false;

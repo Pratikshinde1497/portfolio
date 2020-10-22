@@ -11,5 +11,9 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  name: string = 'PRATIK SHINDE';
+  designation: string = 'WEB DEVELOPER';
+  location: string = 'PUNE, MH, INDIA';
 
+  imgUrl: string = './assets/images/me.jpg';
 }

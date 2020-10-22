@@ -1,8 +1,5 @@
 <div class="container-fluid">
-  <!-- f: {{f.value| json}}
-              user: {{user | json}} -->
-
-  <h3 class="bold text-center my-5 color-primary">Contact Me</h3>
+<app-heading [bigHead]='bigHead' [smallHead]='smallHead'></app-heading>
 
   <div class="container col-md-6 offset-md-3 mb-5">
     <form #f="ngForm" (ngSubmit)="onSubmit()">

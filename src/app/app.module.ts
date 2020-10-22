@@ -14,12 +14,14 @@ import { ProjectService } from './services/project.service';
 import { environment } from '../environments/environment';
 import { AngularFirestore } from 'angularfire2/firestore';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { HeadingComponent } from './components/heading/heading.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent,    HeadingComponent,
     RoutingComponents,
-    NavigationComponent
+    NavigationComponent,
+
   ],
   imports: [
     BrowserModule, AppRoutingModule, NgbModule, FormsModule, 

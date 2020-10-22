@@ -2,9 +2,9 @@
   --borderSize : 3px;
 
   position: -webkit-sticky; /* Safari */
-  position: sticky;
+  position: fixed;
   top: 0;
-  background-color: azure;
+  background-color: var(--DEFAULT_BACK);
   letter-spacing: 2px;
   padding: 0 2em;
   height: 100vh;;
@@ -15,7 +15,7 @@
     margin: 0 auto;
     color: var(--PRIMARY_TEXT_COLOR);
     width: 100%;
-    
+    margin-bottom: .4em;
     .img-container {
       width: 10em;
       height: 10em;
@@ -44,46 +44,51 @@
       .designation, .location {
         font-weight: 700;
         opacity: .6;
-        font-size: small;
+        font-size: 76%;
       }
     }
   }
 
   h4 {
     display: block;
-    font-size: large;
+    font-size: small;
     color: var(--PRIMARY_COLOR);
-    border-bottom: var(--PRIMARY_COLOR) var(--borderSize) solid;
+    opacity: .6;
+    // border-bottom: var(--PRIMARY_COLOR) 1px solid;
   }
-  ul {
-    padding: 1em .5em;
-    display: block;
-    width: 100%;
-    color: var(--HEAD_DARK);
-    // animation: 2s all;
-    li {
-      border-bottom: transparent var(--borderSize) solid;
+  nav {
+    padding: 0;
+    ul {
+      padding: 1em .5em;
+      display: block;
+      width: 100%;
+      color: var(--HEAD_DARK);
+      // animation: 2s all;
+      li {
+        border-bottom: transparent var(--borderSize) solid;
 
-      padding: .4em 1.5em;
-      a {
-        text-transform: uppercase;
-        font-weight: 700;
-        padding: 0;
-        border: none;
-      }
-      .active{
-        color: var(--PRIMARY_COLOR);
-        font-size: larger;
-        background-color: transparent;
-      }
-      &:hover {
-        border-bottom: var(--PRIMARY_COLOR) var(--borderSize) solid;
+        padding: .4em 1.5em;
+        a {
+          text-transform: uppercase;
+          font-weight: 500;
+          padding: 0;
+          border: none;
+        }
+        .active{
+          color: var(--PRIMARY_COLOR);
+          font-weight: 700;
+          background-color: transparent;
+        }
+        &:hover {
+          border-bottom: var(--PRIMARY_COLOR) var(--borderSize) solid;
+        }
       }
     }
   }
 
   .copy-right-container {
     text-align: center;
+    margin-top: 2em;
     span {
       color: black;
       display: block;
