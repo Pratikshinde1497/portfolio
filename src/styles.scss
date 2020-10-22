@@ -12,6 +12,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --PRIMARY_COLOR: #20A4B6;
+  --PRIMARY_TEXT_COLOR: #051E23;
+  --HEAD_DARK : '#979292';
+}
+
 body {
   color: rgba(43, 41, 41, 0.986);
 
@@ -26,4 +32,6 @@ body {
   .nav-link {
     color: rgb(27, 45, 59);
   }
+
+  font-family: 'Red Hat Text', sans-serif;
 }
