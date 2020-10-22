@@ -1,12 +1,12 @@
 .sticky--nav {
   --borderSize : 3px;
-
+  width: auto;
   position: -webkit-sticky; /* Safari */
   position: fixed;
   top: 0;
   background-color: var(--DEFAULT_BACK);
   letter-spacing: 2px;
-  padding: 0 2em;
+  padding: 0 3.2em;
   height: 100vh;;
 
   .profile-container {
@@ -43,7 +43,7 @@
       }
       .designation, .location {
         font-weight: 700;
-        opacity: .6;
+        color: var(--HEAD_DARK);
         font-size: 76%;
       }
     }

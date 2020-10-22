@@ -9,8 +9,16 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 export class ContactComponent implements OnInit {
   constructor() {}
 
+  myMail: string = 'pratikshinde1497@gmail.com';
+  myPhone: string = '+91 788163401';
+  myAddress: string = 'A/P Bhigwan-413130, Pune, MH, India';
+  myWeb: string = 'http://pratikshinde.io'
+
+
   @ViewChild('f') form: any
+  
   ngOnInit(): void {}
+  
   bigHead: string = 'contact';
   smallHead: string = 'get in touch';
   user: User = new User();

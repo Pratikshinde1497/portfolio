@@ -3,7 +3,7 @@
 /* Importing Bootstrap SCSS file. */
 @import "~bootstrap/scss/bootstrap";
 // @import "./assets/styles/animate.css";    //animations
-// @import "./assets/styles/icomoon.css";    //icon font
+// @import "./assets/icomoon.css";    //icon font
 // @import "./assets/styles/style.css";    // theme
 
 * {
@@ -15,7 +15,6 @@
 :root {
   --PRIMARY_COLOR: #20A4B6;
   --PRIMARY_TEXT_COLOR: #051E23;
-  --HEAD_DARK : #979292;
   --DEFAULT_BACK: #F1F0F0;
   --LIGHT_BLUE_BACK: #D9E3E3;
   --INPUT_BACK: #E8E8E8;

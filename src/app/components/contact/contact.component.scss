@@ -5,3 +5,70 @@
 .success {
   border-color: limegreen;
 }
+
+.container-fluid {
+  background-color: var(--DEFAULT_BACK);
+}
+
+.row {
+  // padding: 1.2em 0;
+  height: 80vh;
+  margin: 0;
+
+  .info-container {
+    padding: 2em 1em;
+    color: var(--PRIMARY_COLOR);
+    background-color: var(--white);
+    height: fit-content;
+    box-shadow: 0 1px 4px var(--gray);
+
+    .info-item-container {
+      padding: .5em;
+      margin: 0 auto;
+      background-color: var(--white);
+      margin-bottom: .5em;
+      font-family: 'Rambla', sans-serif;
+      font-size: large;
+      width: 100%;
+      // vertical-align: middle;
+
+
+      .icon-container {
+        display: inline-block;
+        padding: .2em .5em;
+        text-align: center;
+        font-size: 200%;
+        border-radius: 5px;
+        margin-right: .5em;
+      }
+      .text {
+        display: inline-block;
+      // font-size: 110%;
+        span {
+          width: 100%;
+        }
+      }
+
+      .addr {
+        text-transform: uppercase;
+        width: min-content;
+        min-width: 10em;
+        vertical-align: middle;
+      }
+      a {
+        color: inherit;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .form-container {
+
+    background-color: var(--white);
+    box-shadow: 0 1px 4px var(--gray);
+    height: fit-content;
+    form {
+      padding: 2em 1em;
+    }
+  }
+}
