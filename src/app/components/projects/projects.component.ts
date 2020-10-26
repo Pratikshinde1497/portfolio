@@ -2,6 +2,7 @@ import { ProjectService } from './../../services/project.service';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { AngularFirestore, } from 'angularfire2/firestore';
 import { Observable } from 'rxjs';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -9,7 +10,8 @@ import { Observable } from 'rxjs';
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent implements OnInit, OnDestroy {
-  constructor(private _projectservice: ProjectService) {
+
+  constructor(private _projectservice: ProjectService, private router: Router, private route: ActivatedRoute) {
     this.projects = this._projectservice.getProjects();
     this.skills = this._projectservice.getSkills();
   }
@@ -27,8 +29,9 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
   }
 
-
-  getData() {
+  onSelect(project) {
+    let name = project.name;
+    this.router.navigate(['/projects', name, ], {queryParams: {project: btoa(JSON.stringify(project))}});
     
   }
 }

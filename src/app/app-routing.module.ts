@@ -5,13 +5,18 @@ import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ProjectComponent } from './components/projects/project/project.component';
+
 
 const routes: Routes = [
   {
     path: '', component: HomeComponent
   },
   {
-    path: 'projects', component: ProjectsComponent
+    path: 'projects/:id', component: ProjectComponent,
+  },
+  {
+    path: 'projects', component: ProjectsComponent,
   },
   {
     path: 'contact', component: ContactComponent
@@ -32,5 +37,5 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 export const RoutingComponents = [
-  AboutComponent, ProjectsComponent, ContactComponent, PageNotFoundComponent, HomeComponent
+  AboutComponent, ProjectsComponent, ContactComponent, PageNotFoundComponent, HomeComponent, ProjectComponent
 ]
