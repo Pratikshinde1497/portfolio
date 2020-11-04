@@ -6,9 +6,13 @@ import { AboutComponent } from './components/about/about.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ProjectComponent } from './components/projects/project/project.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 
 const routes: Routes = [
+  {
+    path: 'portfolio', component: ProjectsComponent
+  },
   {
     path: '', component: HomeComponent
   },
@@ -23,6 +27,9 @@ const routes: Routes = [
   },
   {
     path: 'about', component: AboutComponent
+  },
+  {
+    path: 'skills', component: SkillsComponent
   },
   {
     path: "**", component: PageNotFoundComponent

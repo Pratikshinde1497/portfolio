@@ -27,7 +27,8 @@ export class ContactComponent implements OnInit {
   sucess: Boolean = false;
   ways = ['Friends', 'Media', 'News', 'TV', 'Blogs'];
   onSubmit() {
-    // console.log("form submitted: ", this.user);
+    console.log("form submitted: ", this.form.value);
+    
     this.form.reset()
   }
 }
