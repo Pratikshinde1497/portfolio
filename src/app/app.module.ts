@@ -16,6 +16,7 @@ import { AngularFirestore } from 'angularfire2/firestore';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { HeadingComponent } from './components/heading/heading.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { SkillComponent } from './components/skills/skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SkillsComponent } from './components/skills/skills.component';
     RoutingComponents,
     NavigationComponent,
     SkillsComponent,
+    SkillComponent,
 
   ],
   imports: [

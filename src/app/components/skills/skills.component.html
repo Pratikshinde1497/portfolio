@@ -1,20 +1,4 @@
-<div class="row d-flex justify-content-around">
-  <div class="skill--container col-sm-4 col-md-3" *ngFor="let skill of skills">
-    <div class="symbol--container">
-      <div class="symbol">
-        <div class="icon--container">
-          <!-- put icon -->
-          H
-        </div>
-      </div>
-    </div>
-    <div class="text--container">
-      <div class="header--text">
-        <h4>{{skill.header}}</h4>
-      </div>
-      <div class="body--text">
-        <h5>{{skill.body}}</h5>
-      </div>
-    </div>
-  </div>
+<div class="row">
+  <app-skill class="col-md-4" *ngFor="let skillObj of skills" [skillObj]="skillObj">
+  </app-skill>
 </div>
