@@ -17,6 +17,8 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { HeadingComponent } from './components/heading/heading.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SkillComponent } from './components/skills/skill/skill.component';
+import { SingleProjectComponent } from './components/projects/single-project/single-project.component';
+import { StyleImageDirective } from './directives/style-image.directive';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { SkillComponent } from './components/skills/skill/skill.component';
     NavigationComponent,
     SkillsComponent,
     SkillComponent,
+    SingleProjectComponent,
+    StyleImageDirective,
 
   ],
   imports: [

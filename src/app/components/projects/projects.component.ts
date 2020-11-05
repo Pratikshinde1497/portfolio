@@ -13,17 +13,14 @@ export class ProjectsComponent implements OnInit, OnDestroy {
 
   constructor(private _projectservice: ProjectService, private router: Router, private route: ActivatedRoute) {
     this.projects = this._projectservice.getProjects();
-    this.skills = this._projectservice.getSkills();
   }
 
   ngOnDestroy(): void {
 
     this.projects = [];
-    this.skills = [];
     // throw new Error('Method not implemented.');
   }
 
-  public skills = [];
   public projects = [];
 
   ngOnInit(): void {

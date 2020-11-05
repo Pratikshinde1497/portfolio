@@ -1,41 +1,37 @@
-<!-- <ul>
-  <!-- <li *ngFor="let skill of skills"> 
-    <h2>Variaty of Techonolies</h2>
-  <pre>{{ skills | json }}</pre>
-  <!-- </li>
-  <button (click)="getData()">Get Data</button>
-</ul> -->
+<div class="row my-5">
+  <app-single-project class="col-md-4" *ngFor="let projectObj of projects" [projectObj]=projectObj></app-single-project>
+</div>
 
-<div class="container-fluid">
+<!-- <div class="container-fluid">
 
   <h3 class="text-center my-5 bold color-primary">List of Projects</h3>
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-lg-4 " *ngFor="let project of projects">
         <div class="card text-muted animate__animated animate__fadeInUp">
-          <div class="card-block">
+          <div class="card-block"> -->
             <!-- header -->
             <!-- <div class="card-header"> -->
-            <img src="{{ project.image }}" alt="alternat name" class="card-img card-img-top img-rounded">
+            <!-- <img src="{{ project.image }}" alt="alternat name" class="card-img card-img-top img-rounded">
             <!-- title -->
-            <h4 class="card-title text-center my-2 color-primary">{{project.name | uppercase}}</h4>
+            <!-- <h4 class="card-title text-center my-2 color-primary">{{project.name | uppercase}}</h4> -->
             <!-- </div> -->
             <!-- body -->
-            <div class="card-body d-flex flex-column">
+            <!-- <div class="card-body d-flex flex-column"> -->
               <!-- description -->
-              <p class="card-text">{{project.description}}</p>
-              <!-- learn more btn -->
+              <!-- <p class="card-text">{{project.description}}</p> -->
+              <!-- learn more btn
               <div class="mt-auto text-center">
                 <button class="btn btn-primary" (click)="onSelect(project)">Learn More</button>
               </div>
-            </div>
+            </div> 
             <!-- card-footer -->
             <!-- <div class="card-footer">
                 <p>this is footer</p>
               </div> -->
-          </div>
+          <!-- </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
+  </div> -->
