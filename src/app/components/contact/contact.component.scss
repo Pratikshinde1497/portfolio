@@ -11,15 +11,15 @@
 }
 
 .row {
-  // padding: 1.2em 0;
-  height: 80vh;
+  padding: 1em 0;
+  height: auto;
   margin: 0;
 
   .info-container {
     padding: 2em 1em;
     color: var(--PRIMARY_COLOR);
     background-color: var(--white);
-    height: fit-content;
+    height: auto;
     box-shadow: 0 1px 4px var(--gray);
 
     .info-item-container {
@@ -66,9 +66,17 @@
 
     background-color: var(--white);
     box-shadow: 0 1px 4px var(--gray);
+    color: var(--PRIMARY_COLOR);
+
     height: fit-content;
     form {
       padding: 2em 1em;
+    }
+    .color-primary {
+    color: var(--PRIMARY_COLOR);
+    }
+    option {
+      color: rgb(170, 170, 170);
     }
   }
 }

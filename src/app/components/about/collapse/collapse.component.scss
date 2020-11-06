@@ -1,0 +1,25 @@
+.card {
+  background-color: #3FA4B7;
+  
+  button {
+    color: white;
+    font-size: large;
+    text-transform: uppercase;
+    text-align: start;
+    width: 100%;
+    &:hover,&:active {
+      outline: none;
+      text-decoration: none;
+    }
+    
+    &:focus {
+      outline: none;
+      text-decoration: none;
+    }
+  }
+
+  .card-body {
+    background-color: #E8E8E8;
+    color: #051E23;
+  }
+}

@@ -10,8 +10,8 @@ import { Component, OnInit, Input } from '@angular/core';
   `,
   styles: [
     'div { padding: 2em .5em; width: 100%; background-color: transparent}',
-    'small { color: var(--HEAD_LIGHT); text-transform: uppercase; margin-bottom: 1em; }',
-    'h2 { color: var(--HEAD_DARK); font-weight: normal; text-transform: uppercase}'
+    'small { color: var(--HEAD_LIGHT); text-transform: uppercase;}',
+    'h2 { color: var(--HEAD_DARK); font-weight: normal; margin-top: .5em; text-transform: uppercase}'
   ]
 })
 export class HeadingComponent implements OnInit {

@@ -1,8 +1,7 @@
 .sticky--nav {
   --borderSize : 3px;
   width: auto;
-  position: -webkit-sticky; /* Safari */
-  position: fixed;
+  position: sticky;
   top: 0;
   background-color: var(--DEFAULT_BACK);
   letter-spacing: 2px;
@@ -31,6 +30,7 @@
     .name-container {
       width: 100%;
       margin-left: 2em;
+      text-align: center;
       span {
         display: block;
         margin-bottom: .2em;
@@ -49,15 +49,20 @@
     }
   }
 
+  .navs {
+    text-align: center;
+    padding: .5em 1em;
   h4 {
     display: block;
     font-size: small;
     color: var(--PRIMARY_COLOR);
     opacity: .6;
+    text-align: start;
     // border-bottom: var(--PRIMARY_COLOR) 1px solid;
   }
   nav {
     padding: 0;
+    text-align: start;
     ul {
       padding: 1em .5em;
       display: block;
@@ -85,6 +90,7 @@
       }
     }
   }
+}
 
   .copy-right-container {
     text-align: center;

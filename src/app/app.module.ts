@@ -20,6 +20,7 @@ import { SkillComponent } from './components/skills/skill/skill.component';
 import { SingleProjectComponent } from './components/projects/single-project/single-project.component';
 import { StyleImageDirective } from './directives/style-image.directive';
 import { LimitedTextDirective } from './directives/limited-text.directive';
+import { CollapseComponent } from './components/about/collapse/collapse.component';
 
 @NgModule({
   declarations: [
@@ -31,10 +32,11 @@ import { LimitedTextDirective } from './directives/limited-text.directive';
     SingleProjectComponent,
     StyleImageDirective,
     LimitedTextDirective,
+    CollapseComponent,
 
   ],
-  imports: [
-    BrowserModule, AppRoutingModule, NgbModule, FormsModule, 
+  imports: [ NgbModule,
+    BrowserModule, AppRoutingModule, FormsModule, 
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule
   ],

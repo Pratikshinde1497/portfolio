@@ -12,6 +12,7 @@ export class AboutComponent implements OnInit {
   smallHead: string = 'who am i?';
   bigHead: string = 'about me';
 
+
   ngOnInit(): void {
   }
 
