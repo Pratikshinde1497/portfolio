@@ -31,7 +31,13 @@
   font-size: larger;
   padding: .5em ;
   color: rgb(49, 49, 49);
+  height: 3.5em;
+  position: relative;
+}
 
+h4 {
+  position: sticky;
+  top: 50%;
 }
 
 .body--text {

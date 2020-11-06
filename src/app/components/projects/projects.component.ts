@@ -15,6 +15,9 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     this.projects = this._projectservice.getProjects();
   }
 
+  smallHead: string = 'what i have done?';
+  bigHead: string = 'all projects';
+
   ngOnDestroy(): void {
 
     this.projects = [];

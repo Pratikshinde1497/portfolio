@@ -19,6 +19,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { SkillComponent } from './components/skills/skill/skill.component';
 import { SingleProjectComponent } from './components/projects/single-project/single-project.component';
 import { StyleImageDirective } from './directives/style-image.directive';
+import { LimitedTextDirective } from './directives/limited-text.directive';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { StyleImageDirective } from './directives/style-image.directive';
     SkillComponent,
     SingleProjectComponent,
     StyleImageDirective,
+    LimitedTextDirective,
 
   ],
   imports: [
