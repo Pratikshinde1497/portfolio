@@ -21,6 +21,7 @@ import { SingleProjectComponent } from './components/projects/single-project/sin
 import { StyleImageDirective } from './directives/style-image.directive';
 import { LimitedTextDirective } from './directives/limited-text.directive';
 import { CollapseComponent } from './components/about/collapse/collapse.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,7 @@ import { CollapseComponent } from './components/about/collapse/collapse.componen
   imports: [ NgbModule,
     BrowserModule, AppRoutingModule, FormsModule, 
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
+    AngularFirestoreModule, HttpClientModule
   ],
   providers: [ProjectService, AngularFirestore],
   bootstrap: [AppComponent],
