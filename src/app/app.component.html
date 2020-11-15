@@ -1,6 +1,6 @@
 <div class="row">
-  <div class="d-sm-block d-md-none ham-container">
-    <button class="btn ham" (click)="openNavBar()">
+  <div class="d-block d-md-none ham-container">
+    <button class="btn ham" (click)="openCloseNavBar()">
       <svg id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
         xmlns="http://www.w3.org/2000/svg">
         <path
@@ -12,10 +12,10 @@
       </svg>
     </button>
   </div>
-  <div class="d-none d-md-block col-md-3  position-relative">
+  <div [class.d-block]="showNav" class="d-none d-md-block col-md-3  position-relative">
     <app-navigation class="navMenu"></app-navigation>
   </div>
-  <div class="d-sm-block col-md-9 position-relative">
+  <div class="d-block col-md-9 position-relative">
     <router-outlet></router-outlet>
   </div>
 </div>
