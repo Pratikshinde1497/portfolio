@@ -21,6 +21,7 @@
     background-color: var(--white);
     height: auto;
     box-shadow: 0 1px 4px var(--gray);
+    margin-bottom: 1em;
 
     .info-item-container {
       padding: .5em;
@@ -67,6 +68,7 @@
     background-color: var(--white);
     box-shadow: 0 1px 4px var(--gray);
     color: var(--PRIMARY_COLOR);
+    margin-bottom: 1em;
 
     height: fit-content;
     form {

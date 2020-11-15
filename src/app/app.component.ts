@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public name = '';
+  isSmallScreen: boolean = true;
+
+  openNavBar() {
+    return alert("open navBAr")
+  }
 }

@@ -1,6 +1,7 @@
 .row {
   margin: 0;
   background-color: var(--DEFAULT_BACKGROUND);
+  height: 100vh;
   div {
     padding: 0%;
   }
@@ -8,4 +9,22 @@
 
 .navMenu {
   display: contents;
+}
+
+.test {
+  display: none;
+}
+
+.ham-container {
+  width: 100%;
+}
+.ham {
+  z-index: 1;
+  position: fixed;
+  svg {
+
+    width: 1em;
+    height: 1em;
+    fill: rgb(97, 97, 97);
+  }
 }
