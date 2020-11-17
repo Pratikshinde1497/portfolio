@@ -1,6 +1,7 @@
 .row {
   margin: 0;
   background-color: var(--DEFAULT_BACKGROUND);
+  overflow-x: hidden;
   height: 100vh;
   div {
     padding: 0%;

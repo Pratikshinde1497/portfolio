@@ -1,6 +1,8 @@
 .card {
   background-color: #3FA4B7;
-  
+  .card-header {
+    padding: .5em;
+  }
   button {
     color: white;
     font-size: large;

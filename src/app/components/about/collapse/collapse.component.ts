@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-collapse',
@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CollapseComponent implements OnInit {
 
+  @Input() eduInfo: {head: string, body: string}
   constructor() { }
   isCollapsed = true;
+
 
   ngOnInit(): void {
   }
 
-  smallHead: string = 'what i have learned so far?'
-  bigHead: string = 'my education'
 }

@@ -1,4 +1,22 @@
 <app-heading [bigHead]='bigHead' [smallHead]='smallHead'></app-heading>
+<div class="info-container d-flex">
+  <div class="img-container col-md-6">
+    <img src="assets/images/me_.jpeg" alt="my image">
+  </div>
+  <div class="about-me-body col-md-6">
+    <p>
+      Hello, Myself Pratik Shinde, I'm a Web Developer, I like to build interesting projects out of
+      curiosity.
+      I live in Bhigwan located near Baramati but call many pllaces my home. Most of my time I spend in
+      watching web series, doing some experienments and implementing about new technologies into real
+      projects just for fun.
+      also, I like to travel visit historical venues, listen music, spend time with friends at evening everyday.
+      My favorite web series so far is Breaking Bad.
+
+    </p>
+  </div>
+</div>
+
 <!-- <div class="contaner-fluid">
   <div class="containe">
     <div class="row py-5">
@@ -19,4 +37,7 @@
   </div>
 </div> -->
 
-<app-collapse></app-collapse>
+<app-heading [bigHead]='bigHead1' [smallHead]='smallHead1'></app-heading>
+<div class="edu-container">
+  <app-collapse *ngFor='let edu of eduData' [eduInfo]="edu"></app-collapse>
+</div>
