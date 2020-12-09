@@ -1,5 +1,6 @@
+import { ProjectService } from 'src/app/services/project.service';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 
 @Component({
   selector: 'app-project',
@@ -8,20 +9,21 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class ProjectComponent implements OnInit {
 
-  constructor( private route: ActivatedRoute) { }
+  constructor( private route: ActivatedRoute, private _router: Router, private _projectServ: ProjectService) { }
 
   public projectName: string;
   public project;
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params: ParamMap) => {
-      this.projectName = params.get('id');      
+      this.projectName = params.get('name');      
     })
+    this.project = this._projectServ.getProjectByName(this.projectName);
+    
+  }
 
-    this.route.queryParams.subscribe((queries) => {
-      this.project = JSON.parse(atob(queries["project"]))
-      
-    })
+  back() {
+    this._router.navigate(['projects']);
   }
 
 }

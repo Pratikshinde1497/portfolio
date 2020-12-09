@@ -20,8 +20,11 @@ export class ProjectService {
     return this.data;
   }
 
+  getProjectByName(name: string) {
+    return this.data.find((obj)=> obj.name === name);
+  }
+
   getSkills() {
-    
     return this.skills;
   }
 }

@@ -1,7 +1,11 @@
-<p>project works! {{projectName}}</p>
-
-<p>{{project.name}}</p>
-<p>{{project.description}}</p>
-<p>{{project.period  | json}}</p>
-
-<!-- <p>{{project.period.startDate | json}}</p> -->
+<div class="jumbotron"
+  style="background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url({{project?.image}}); color: azure; background-repeat: no-repeat; background-size: cover;">
+  <h1 class="display-3">{{project?.name}}</h1>
+  <p class="lead">{{project?.description}}</p>
+  <hr class="my-4">
+  <p></p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="https://github.com/Pratikshinde1497" role="button">Visit GitHub Account</a>
+  </p>
+  <a class="btn btn-default" style="color: azure;" (click)="back()"> Back </a>
+</div>

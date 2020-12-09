@@ -1,5 +1,7 @@
 import { Project } from './../../../model/Project.Model';
 import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { ProjectsComponent } from '../projects.component';
 
 @Component({
   selector: 'app-single-project',
@@ -8,11 +10,14 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SingleProjectComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router: Router, private _route: ActivatedRoute) { }
 
   @Input() projectObj: Project;
   ngOnInit(): void {
     
   }
 
+  onSelect(name) {
+    this._router.navigate([name], { relativeTo: this._route});
+  }
 }
