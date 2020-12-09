@@ -19,16 +19,16 @@
         <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="/">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" routerLink="/projects">PROJECTS</a>
+          <a class="nav-link" routerLinkActive="active" (click)="navigateToProjects()">PROJECTS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLinkActive="active" routerLink="/skills">SKILLS</a>
+        <a class="nav-link" routerLinkActive="active" (click)="navigateToSkills()">SKILLS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLinkActive="active" routerLink="/contact">CONTACT</a>
+        <a class="nav-link" routerLinkActive="active" (click)="navigateToContact()">CONTACT</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLinkActive="active" routerLink="/about">ABOUT ME</a>
+        <a class="nav-link" routerLinkActive="active" (click)="navigateToAbout()">ABOUT ME</a>
       </li>
     </ul>
   </nav>

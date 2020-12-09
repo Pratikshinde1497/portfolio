@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router: Router) { }
 
   ngOnInit(): void {
   }
@@ -16,4 +17,20 @@ export class NavigationComponent implements OnInit {
   location: string = 'PUNE, MH, INDIA';
 
   imgUrl: string = '/assets/images/me.jpg';
+
+  navigateToProjects() {
+    this._router.navigate(['projects']);
+  }
+
+  navigateToAbout() {
+    this._router.navigate(['about']);
+  }
+
+  navigateToSkills() {
+    this._router.navigate(['skills']);
+  }
+
+  navigateToContact() {
+    this._router.navigate(['contact']);
+  }
 }
