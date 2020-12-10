@@ -21,7 +21,6 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
 
     this.projects = [];
-    // throw new Error('Method not implemented.');
   }
 
   public projects = [];
@@ -29,9 +28,4 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
   }
 
-  onSelect(project) {
-    let name = project.name;
-    this.router.navigate(['/projects', name, ], {queryParams: {project: btoa(JSON.stringify(project))}});
-    
-  }
 }

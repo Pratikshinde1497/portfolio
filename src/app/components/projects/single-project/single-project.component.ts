@@ -17,7 +17,10 @@ export class SingleProjectComponent implements OnInit {
     
   }
 
-  onSelect(name) {
-    this._router.navigate([name], { relativeTo: this._route});
+
+  onSelect(project) {
+    let name = project.name;
+    this._router.navigate(['projects', name]);
+    
   }
 }
