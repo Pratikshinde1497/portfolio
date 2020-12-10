@@ -6,3 +6,39 @@ li {
     color: wheat;
   }
 }
+
+
+.hero-section {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  h2 {
+    color: #F1F0F0;
+    margin-bottom: .5em;
+  }
+  .section-text {
+    width: 50%;
+    position: relative;
+    top: 40%;
+    left: 10%;
+    .hero-text {
+      padding: 1em 0;
+      color: #F1F0F0;
+      font-size: larger;
+    }
+
+    .hero-btn {
+      margin-top: .5em;
+      color: #F1F0F0;
+      border-radius: 50em;
+      background-color: #3DA7C2;
+      &:hover {
+      background-color: #135f72;
+      }
+    }
+  }
+  
+
+} 

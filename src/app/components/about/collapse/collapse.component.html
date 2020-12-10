@@ -13,8 +13,12 @@
     <div id="collapseOne" [ngbCollapse]="isCollapsed" class="collapse" aria-labelledby="headingOne"
       data-parent="#accordionExample">
       <div class="card-body">
-        {{eduInfo.body}}
+        <h6 class="card-title">Studied At : {{eduInfo.studiedAt}}</h6>
+        <p class="card-text">{{eduInfo.body}}</p>
+        <p> Started: {{eduInfo.startYear}}</p>
+        <p>Completed: {{eduInfo.endYear}}</p>
       </div>
+      <p></p>
     </div>
   </div>
 </div>

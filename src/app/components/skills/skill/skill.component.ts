@@ -12,6 +12,8 @@ export class SkillComponent implements OnInit {
 
   @Input() skillObj: Skill
   ngOnInit(): void {
+    console.log(this.skillObj);
+    
   }
 
 }

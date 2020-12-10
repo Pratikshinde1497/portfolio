@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CollapseComponent implements OnInit {
 
-  @Input() eduInfo: {head: string, body: string}
+  @Input() eduInfo: {head: string, body: string, studiedAt: string, startYear: number, endYear: number}
   constructor() { }
   isCollapsed = true;
 

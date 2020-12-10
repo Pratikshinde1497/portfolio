@@ -16,7 +16,7 @@ export class NavigationComponent implements OnInit {
   designation: string = 'WEB DEVELOPER';
   location: string = 'PUNE, MH, INDIA';
 
-  imgUrl: string = '/assets/images/me.jpg';
+  imgUrl: string = 'assets/images/me.jpg';
 
   navigateToProjects() {
     this._router.navigate(['projects']);
